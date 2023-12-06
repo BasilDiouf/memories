@@ -1,6 +1,6 @@
 import "./Nav.scss";
 import { useState } from "react";
-import logo from "./../../assets/icons/logo-new.png";
+// import logo from "./../../assets/icons/logo-new.png";
 
 const Nav = () => {
   const [showLinks, setShowLinks] = useState(false);
@@ -10,9 +10,7 @@ const Nav = () => {
   };
   return (
     <nav className={`Navbar ${showLinks ? "show-nav" : "hide_nav"} `}>
-      <div className="Navbar_logo">
-        <img src={logo} alt="" />
-      </div>
+      <div className="Navbar_logo">{/* <img src={logo} alt="" /> */}</div>
       <ul className="Navbar_links">
         <li className="Navbar_item slideInDown-1">
           <a href="/" className="Navbar_link">
