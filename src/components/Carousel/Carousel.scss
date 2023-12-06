@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab&family=Nunito:ital@1&display=swap");
+
+.right {
+  width: 50%;
+  overflow: hidden;
+}
+
+.swiper-wrapper {
+  height: 100vh;
+  width: 100%;
+}
+
+.left .swiper-slide {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 5em;
+  background-color: rgb(255, 227, 194, 0.4);
+}
+
+.left .swiper-slide p {
+  max-width: 40em;
+}
+
+.left {
+  width: 50%;
+  overflow: hidden;
+}
+
+// .right {
+//   width: 50vw;
+// }
+
+* {
+  box-sizing: border-box;
+}
+
+.full-carousel {
+  font-family: Arial;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.go-button {
+  font-family: "Courier New", Courier, monospace;
+  transform: translateY(10rem);
+  padding: 0.5rem 4rem;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(255, 215, 172);
+  font-size: 20px;
+  font-weight: 700;
+  transition-duration: 500ms, 500ms;
+}
+
+.go-button:hover {
+  box-shadow: 5px 5px 29px 5px rgb(148, 118, 87);
+}
+
+h2 {
+  font-size: 3em;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Nunito";
+  font-size: large;
+  line-height: 1.5em;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}

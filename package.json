@@ -12,7 +12,8 @@
   "dependencies": {
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
-    "react-pretty-carousel": "^1.0.19",
+    "react-parallax-tilt": "^1.7.175",
+    "react-responsive-carousel": "^3.2.23",
     "swiper": "^11.0.5"
   },
   "devDependencies": {
@@ -24,6 +25,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.4",
     "sass": "^1.69.5",
-    "vite": "^5.0.0"
+    "vite": "^5.0.0",
+    "yarn": "^1.22.21"
   }
 }
