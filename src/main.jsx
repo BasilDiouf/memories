@@ -4,6 +4,7 @@ import { Carousel } from "../src/components/Carousel/Carousel";
 import { Homepage } from "../src/components/Homepage/Homepage";
 import { ErrorPage } from "../src/components/ErrorPage/ErrorPage";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import SignupForm from "./components/SignupForm/SignupForm";
 
 const route = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const route = createBrowserRouter([
   {
     path: "/memories",
     element: <Carousel />,
+  },
+  {
+    path: "/signup",
+    element: <SignupForm />,
   },
   {
     path: "*",
