@@ -1,9 +1,11 @@
 .homepage {
   background-image: url(../../assets/icons/background-mood.png);
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow: scroll;
 }
 
 .homepage__content {
@@ -12,7 +14,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   padding-top: 10rem;
 }
 
@@ -24,6 +25,7 @@
 .homepage__resume {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
+  font-size: large;
 }
 
 .homepage__button-create {
@@ -32,9 +34,15 @@
   padding: 1rem 3rem;
   margin-top: 5rem;
   background-color: rgba(255, 194, 219, 0.4);
+  transition: 500ms;
 }
 
 .homepage__button-create:hover {
+  box-shadow: 5px 5px 29px 5px rgb(148, 118, 87);
+}
+
+.homepage__button-visit:hover {
+  box-shadow: 5px 5px 29px 5px rgb(148, 118, 87);
 }
 
 .homepage__button-visit {
@@ -43,10 +51,25 @@
   padding: 2rem 4rem;
   margin-top: 5rem;
   background-color: rgba(255, 194, 219, 0.4);
+  transition: 500ms;
 }
 
 .memory {
   font-family: "Poppins", sans-serif;
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+@media screen and (max-width: 767px) {
+  .homepage__content {
+    padding-top: 2rem;
+  }
+
+  .homepage__button-create {
+    margin-top: 1rem;
+  }
+
+  .homepage__button-visit {
+    margin-top: 2rem;
+  }
 }

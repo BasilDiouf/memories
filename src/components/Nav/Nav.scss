@@ -16,33 +16,33 @@
   text-align: center;
 }
 
-.Navbar_logo img {
+.Navbar__logo img {
   width: 3rem;
   height: 3rem;
 }
 
-.Navbar_links {
+.Navbar__links {
   display: flex;
   list-style: none;
   padding-left: 6.5rem;
 }
 
-.Navbar_link {
+.Navbar__link {
   padding-right: 5rem;
   color: inherit;
   text-decoration: none;
 }
 
-.Navbar_burger {
-  width: 0px;
-  height: 0px;
+.Navbar__burger {
+  width: 40px;
+  height: 40px;
   background: transparent;
   color: inherit;
   border: none;
 }
 
 @media screen and (max-width: 767px) {
-  .Navbar_links {
+  .Navbar__links {
     color: black;
     flex-direction: column;
     justify-content: center;
@@ -54,28 +54,29 @@
     height: 100vh;
     padding: 2rem;
     visibility: hidden;
-    background-color: rgb(255, 227, 194);
+    background-color: #f2ccbf;
     transition: all 0.8s ease-out;
   }
 
-  .Navbar_link:hover {
+  .Navbar__link:hover {
     color: grey;
   }
 
-  .show-nav .Navbar_links {
+  .show-nav .Navbar__links {
     width: 100vw;
     right: 0;
     visibility: visible;
+    padding-left: 10rem;
   }
 
-  .Navbar_link {
+  .Navbar__link {
     display: block;
     padding: 1.5rem;
     font-size: 5vw;
     transition: all 0.4s ease-out;
   }
 
-  .Navbar_item::after {
+  .Navbar__item::after {
     content: "";
     display: block;
     margin: 0 auto;
@@ -84,11 +85,11 @@
     background: black;
   }
 
-  .Navbar_item:last-child::after {
+  .Navbar__item:last-child::after {
     display: none;
   }
 
-  .Navbar_burger {
+  .Navbar__burger {
     display: block;
     position: fixed;
     top: 1rem;
@@ -96,13 +97,13 @@
     border: none;
   }
 
-  .Navbar_burger:hover {
+  .Navbar__burger:hover {
     cursor: pointer;
   }
 
-  .Burger_bar,
-  .Burger_bar::before,
-  .Burger_bar::after {
+  .Burger__bar,
+  .Burger__bar::before,
+  .Burger__bar::after {
     display: block;
     width: 40px;
     height: 3px;
@@ -111,39 +112,39 @@
     background-color: white;
     transition: all 0.5s ease-in-out;
   }
-  .Burger_bar::before,
-  .Burger_bar::after {
+  .Burger__bar::before,
+  .Burger__bar::after {
     content: "";
     position: absolute;
     left: 0;
   }
-  .Burger_bar::before {
+  .Burger__bar::before {
     transform: translateY(-12px);
   }
 
-  .Burger_bar::after {
+  .Burger__bar::after {
     transform: translateY(12px);
   }
 
-  .show-nav .Burger_bar {
+  .show-nav .Burger__bar {
     background: transparent;
     width: 0;
   }
 
-  .show-nav .Burger_bar::before {
+  .show-nav .Burger__bar::before {
     transform: rotate(45deg);
   }
 
-  .show-nav .Burger_bar::after {
+  .show-nav .Burger__bar::after {
     transform: rotate(-45deg);
   }
 
   //burger button animation
-  .Navbar_item {
+  .Navbar__item {
     transform: translateY(100vh);
   }
 
-  .show-nav .Navbar_item {
+  .show-nav .Navbar__item {
     transform: translateY(0);
   }
 
