@@ -22,7 +22,7 @@
 }
 
 .left .swiper-slide p {
-  max-width: 40em;
+  max-width: 30em;
 }
 
 .left {
@@ -64,6 +64,33 @@
 
 .go-button:hover {
   box-shadow: 5px 5px 29px 5px rgb(148, 118, 87);
+}
+
+.return {
+  display: flex;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  z-index: 10;
+  transition: 500ms;
+}
+
+.return:hover {
+  transform: scale(1.2);
+}
+
+.return-arrow {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 3rem;
+  color: rgb(148, 118, 87);
+}
+
+.return-bar {
+  background-color: black;
+  height: 4px;
+  width: 20px;
+  margin-top: 1.6rem;
+  background-color: rgb(148, 118, 87);
 }
 
 h2 {

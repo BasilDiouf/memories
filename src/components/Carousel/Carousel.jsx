@@ -1,11 +1,12 @@
 import Swiper from "https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs";
+import { Link } from "react-router-dom";
 import image1 from "./../../assets/photos/fuu-j-UM369yexrRg-unsplash.jpg";
 import image2 from "./../../assets/photos/salvatore-tonnara-etcN-HM_JRU-unsplash.jpg";
 import image3 from "./../../assets/photos/oleksandr-kurchev-LbTZDUY_8HE-unsplash.jpg";
 
 import "./Carousel.scss";
 
-const Carousel = () => {
+export const Carousel = () => {
   let swiperLeft = new Swiper(".swiper-left", {
     effect: "slide",
     direction: "vertical",
@@ -29,11 +30,17 @@ const Carousel = () => {
 
   return (
     <div className="full-carousel">
+      <Link to="/">
+        <div className="return">
+          <div className="return-arrow">{"<"}</div>
+          <div className="return-bar"></div>
+        </div>
+      </Link>
       <div className="left">
         <div className="swiper-left">
           <div className="swiper-wrapper">
             <div className="swiper-slide">
-              <div className="parallax">
+              <div>
                 <h2 className="mood-title">MON MOOD</h2>
                 <p>
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
