@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import image1 from "./../../assets/photos/fuu-j-UM369yexrRg-unsplash.jpg";
 import image2 from "./../../assets/photos/salvatore-tonnara-etcN-HM_JRU-unsplash.jpg";
 import image3 from "./../../assets/photos/oleksandr-kurchev-LbTZDUY_8HE-unsplash.jpg";
+import { motion } from "framer-motion";
 
 import "./Carousel.scss";
 
@@ -29,7 +30,12 @@ export const Carousel = () => {
   swiperRight.controller.control = swiperLeft;
 
   return (
-    <div className="full-carousel">
+    <motion.div
+      className="full-carousel"
+      initial={{ opacity: 0, transition: { duration: 1 }, top: 0 }}
+      animate={{ opacity: 1, transition: { duration: 1 } }}
+      exit={{ opacity: 0, transition: { duration: 0.2 } }}
+    >
       <Link to="/">
         <div className="return">
           <div className="return-arrow">{"<"}</div>
@@ -105,7 +111,7 @@ export const Carousel = () => {
       </div>
       <div className="swiper-button-prev"></div>
       <div className="swiper-button-next"></div>
-    </div>
+    </motion.div>
   );
 };
 

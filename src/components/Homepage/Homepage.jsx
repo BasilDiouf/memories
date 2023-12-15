@@ -2,13 +2,20 @@
 import { Link } from "react-router-dom";
 import Nav from "../Nav/Nav";
 import "./Homepage.scss";
-import LoginBox from "../LoginBox/LoginBox";
+import { motion } from "framer-motion";
+
+// import LoginBox from "../LoginBox/LoginBox";
 
 export const Homepage = () => {
   return (
-    <div className="homepage">
+    <motion.div
+      className="homepage"
+      initial={{ opacity: 0, transition: { duration: 1 }, bottom: 0 }}
+      animate={{ opacity: 1, transition: { duration: 1 } }}
+      exit={{ opacity: 0, transition: { duration: 0.2 } }}
+    >
       <Nav />
-      <LoginBox />
+      {/* <LoginBox /> */}
       <div className="homepage__content">
         <h1 className="homepage__title">MEMORIES</h1>
         <p className="homepage__resume">
@@ -36,7 +43,7 @@ export const Homepage = () => {
           </button>
         </Link>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,5 +1,6 @@
 import "./Nav.scss";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 // import logo from "./../../assets/icons/logo-new.png";
 
 const Nav = () => {
@@ -23,9 +24,9 @@ const Nav = () => {
           </a>
         </li>
         <li className="Navbar__item slideInDown-3">
-          <a href="/" className="Navbar__link">
+          <Link to="/signup" className="Navbar__link">
             Inscription
-          </a>
+          </Link>
         </li>
         <li className="Navbar__item slideInDown-4">
           <a href="/" className="Navbar__link">
@@ -33,7 +34,11 @@ const Nav = () => {
           </a>
         </li>
       </ul>
-      <button className="Navbar__burger" onClick={handleShowLinks} type="button">
+      <button
+        className="Navbar__burger"
+        onClick={handleShowLinks}
+        type="button"
+      >
         <span className="Burger__bar" />
       </button>
     </nav>

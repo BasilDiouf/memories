@@ -1,17 +1,13 @@
-
+import { AnimatedRoutes } from "../components/AnimatedRoutes/AnimatedRoutes";
+import { BrowserRouter as Router } from "react-router-dom";
 import "./App.scss";
 
-
-const App = () => {
-
+export const App = () => {
   return (
     <div className="App">
-      {/* <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Homepage />} />
-          <Route path="/memories" element={<Carousel />} />
-        </Routes>
-      </BrowserRouter> */}
+      <Router>
+        <AnimatedRoutes />
+      </Router>
     </div>
   );
 };

@@ -2,7 +2,7 @@ import "./SignupForm.scss";
 
 export const SignupForm = () => {
   return (
-    <div>
+    <div className="signup-form">
       <input
         type="email"
         id="email"
