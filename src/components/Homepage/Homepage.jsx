@@ -22,7 +22,7 @@ export const Homepage = () => {
           Bienvenue sur Memories! Ici vous pouvez partager votre{" "}
           <span className="memory">"MOOD"</span> du moment ou un souvenir. Créez
           votre <span className="memory">MEMORY</span> depuis votre espace
-          utilisateur et partager le au reste de la communauté! <br />
+          utilisateur et partager le au reste de la communauté! <br /> 
           <span className="memory-end">Lancez vous!</span>
         </p>
         {/* <p className="homepage__resume">
