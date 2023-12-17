@@ -1,3 +1,4 @@
+import React from "react";
 import { AnimatedRoutes } from "../components/AnimatedRoutes/AnimatedRoutes";
 import { BrowserRouter as Router } from "react-router-dom";
 import "./App.scss";

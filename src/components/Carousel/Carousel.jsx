@@ -60,7 +60,8 @@ export const Carousel = () => {
                   ducimus est sequi
                 </p>
               </div>
-              <button className="go-button">GO</button>
+              <button className="go-button">LIKE</button>
+              <button className="go-button">SHARE</button>
             </div>
             <div className="swiper-slide">
               <h2 className="mood-title">TON MOOD</h2>
@@ -72,9 +73,9 @@ export const Carousel = () => {
                 aperiam enim eveniet sequi voluptatem, accusamus quam,
                 voluptatibus culpa aliquam pariatur sint?
               </p>
-              <div>
-                <button className="go-button">GO</button>
-              </div>
+
+              <button className="go-button">LIKE</button>
+              <button className="go-button">SHARE</button>
             </div>
             <div className="swiper-slide">
               <h2 className="mood-title">NOTRE MOOD</h2>
@@ -89,7 +90,8 @@ export const Carousel = () => {
                 voluptatibus delectus reiciendis deleniti quaerat exercitationem
                 corporis, non architecto repellat ducimus quibusdam!
               </p>
-              <button className="go-button">GO</button>
+              <button className="go-button">LIKE</button>
+              <button className="go-button">SHARE</button>
             </div>
           </div>
         </div>
