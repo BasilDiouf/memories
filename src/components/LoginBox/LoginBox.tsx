@@ -117,7 +117,7 @@ export const LoginBox = () => {
         <div className="line"></div>
         <div className="media-options">
           <a href="#" className="field facebook">
-            <i className="bx bxl-facebook facebook-icon"></i>
+            <i className="bx bxl-facebook facebook-icon"><img src="" alt="" /></i>
             <span>Login with Facebook</span>
           </a>
         </div>

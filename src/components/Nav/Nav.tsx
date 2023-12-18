@@ -32,15 +32,25 @@ const Nav = () => {
         <ul className="Navbar__links">
           <li className="Navbar__item slideInDown-1">
             <a href="/" className="Navbar__link">
-              Profil
+              Home
             </a>
           </li>
           <li className="Navbar__item slideInDown-2">
-            <a href="/" className="Navbar__link">
-              My Memory
+            <a href="/memories" className="Navbar__link">
+              Memories
             </a>
           </li>
           <li className="Navbar__item slideInDown-3">
+            <a href="/" className="Navbar__link">
+              Profil
+            </a>
+          </li>
+          <li className="Navbar__item slideInDown-4">
+            <a href="/memory" className="Navbar__link">
+              My Memory
+            </a>
+          </li>
+          <li className="Navbar__item slideInDown-5">
             <a href="/" className="Navbar__link last" onClick={handleClick}>
               Connexion
             </a>

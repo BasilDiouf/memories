@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hepta+Slab&family=Nunito:ital@1&display=swap");
+
+.memory {
+  background-image: url(../../assets/icons/background-mood.png);
+  width: 100vw;
+  height: 100%;
+}
+
+.memory-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.memory-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 47%;
+  height: 80vh;
+  overflow: hidden;
+  border: 0.2rem solid;
+}
+
+.memory-right-text {
+  border-radius: 20px;
+  border: none;
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  background-color: rgba(255, 194, 219, 0.4);
+  transition: 500ms;
+}
+
+.memory-right-text:hover {
+  box-shadow: 5px 5px 29px 5px rgb(148, 118, 87);
+}
+
+.memory-left {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 47%;
+  overflow: hidden;
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.division-bar {
+  width: 1px;
+  height: 70vh;
+  background-color: gray;
+}
+
+#memory-title {
+  width: 15rem;
+  margin-bottom: 2rem;
+}
+
+#memory-text {
+  width: 40rem;
+}
+
+.go-button {
+  border-radius: 20px;
+  border: none;
+  padding: 1rem 3rem;
+  margin-top: 1rem;
+  background-color: rgba(255, 194, 219, 0.4);
+  transition: 500ms;
+}
+
+.go-button:hover {
+  box-shadow: 5px 5px 29px 5px rgb(148, 118, 87);
+}
+
+h2 {
+  font-size: 3em;
+  margin: 0 0 0.5em 0;
+  padding: 0;
+}
+
+p {
+  font-family: "Nunito";
+  font-size: large;
+  line-height: 1.5em;
+  text-align: justify;
+  margin: 0;
+  padding: 0;
+}
