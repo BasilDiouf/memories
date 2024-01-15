@@ -4,10 +4,11 @@ import "./ProfilePage.scss";
 export const ProfilePage = () => {
   return (
     <div className="ProfilePage">
-      <div>
+      {/* <div className="profile-photo">
         <img src={image3} />
-      </div>
-      <h1 className="profile-welcome">Bievenue Utilisateurs</h1>
+      </div> */}
+      {/* <h1 className="profile-welcome">Bievenue User</h1> */}
+      <div className="profil-section">ALL YOUR MEMORIES ...</div>
     </div>
   );
 };

@@ -1,12 +1,50 @@
-img {
-  width: 30%;
-  height: 20%;
-  opacity: 70%;
-  border-radius: 12%;
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Sigmar&display=swap");
+
+.profile-photo img {
+  width: 5%;
+  opacity: 80%;
+  border-radius: 25%;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
 }
 
 .ProfilePage {
-  background-image: url(../../assets/icons/background-mood.png);
+  // background-image: url(../../assets/icons/background-mood.png);
+  background-color: black;
   width: 100vw;
   height: 100vh;
+  text-align: center;
+}
+
+.profile-welcome {
+  padding-top: 3rem;
+}
+
+.profil-section {
+  background-size: cover;
+  overflow: hidden;
+  font-family: "Sigmar", sans-serif;
+  font-size: 300px;
+  letter-spacing: 20px;
+  color: transparent;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-image: url("../../assets/img/Download-jungle-best-backgrounds.jpg");
+  background-size: 120%;
+  animation: bg-animation 50s cubic-bezier(0.3, 0, 0.7, 1) infinite;
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
 }
