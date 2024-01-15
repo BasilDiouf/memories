@@ -41,7 +41,7 @@ const Nav = () => {
             </a>
           </li>
           <li className="Navbar__item slideInDown-3">
-            <a href="/" className="Navbar__link">
+            <a href="/profil" className="Navbar__link">
               Profil
             </a>
           </li>

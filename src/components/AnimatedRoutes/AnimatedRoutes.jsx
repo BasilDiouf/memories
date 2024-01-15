@@ -4,6 +4,7 @@ import { Homepage } from "../Homepage/Homepage";
 import { ErrorPage } from "../ErrorPage/ErrorPage";
 import { Memory } from "../Memory/Memory";
 import { AnimatePresence } from "framer-motion";
+import { ProfilePage } from "../ProfilPage/ProfilePage";
 
 export const AnimatedRoutes = () => {
   const location = useLocation();
@@ -13,7 +14,8 @@ export const AnimatedRoutes = () => {
         <Route path="/" element={<Homepage />} />
         <Route path="/memories" element={<Carousel />} />
         <Route path="/*" element={<ErrorPage />} />
-        <Route path="memory" element={<Memory />} />
+        <Route path="/memory" element={<Memory />} />
+        <Route path="/profil" element={<ProfilePage />} />
       </Routes>
     </AnimatePresence>
   );
