@@ -1,4 +1,10 @@
+import Fullpage, {
+  FullPageSections,
+  FullpageSection,
+  FullpageNavigation,
+} from "@ap.cx/react-fullpage";
 import "./ProfilePage.scss";
+import { Gallery } from "../Gallery/Gallery";
 import "react-multi-carousel/lib/styles.css";
 
 export const ProfilePage = () => {
@@ -8,7 +14,16 @@ export const ProfilePage = () => {
         <img src={image3} />
       </div> */}
       {/* <h1 className="profile-welcome">Bievenue User</h1> */}
-      <div className="profil-section">ALL YOUR MEMORIES</div>
+      <Fullpage>
+        <FullPageSections>
+          <FullpageSection>
+            <div className="profil-section">ALL YOUR MEMORIES</div>
+          </FullpageSection>
+          <FullpageSection>
+            <Gallery />
+          </FullpageSection>
+        </FullPageSections>
+      </Fullpage>
     </div>
   );
 };
