@@ -12,8 +12,7 @@
 }
 
 .ProfilePage {
-  background-image: url(../../assets/icons/background-mood.png);
-
+  // background-image: url(../../assets/icons/background-mood.png);
   width: 100vw;
   height: 100vh;
   text-align: center;
@@ -25,7 +24,8 @@
 
 .profil-section {
   background-size: cover;
-  overflow: hidden;
+  height: 100vh;
+  overflow: scroll;
   font-family: "Bakbak One", sans-serif;
   font-weight: 350;
   font-style: normal;
@@ -35,7 +35,10 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  background-image: url("../../assets/img/Download-jungle-best-backgrounds.jpg");
+  // background-image: url("../../assets/img/Download-jungle-best-backgrounds.jpg");
+  // background-image: url("../../assets/img/marek-piwnicki-luD9ZsZkm3A-unsplash.jpg");
+  // background-image: url("../../assets/img/neom-I5j46lqAo-o-unsplash.jpg");
+  background-image: url("../../assets/img/neom-kzEFwhXPXwo-unsplash.jpg");
   background-size: 120%;
   animation: bg-animation 50s cubic-bezier(0.3, 0, 0.7, 1) infinite;
 }
