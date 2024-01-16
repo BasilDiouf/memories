@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caprasimo&family=Sigmar&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bakbak+One&family=Bungee&display=swap");
 
 .profile-photo img {
   width: 5%;
@@ -12,7 +13,7 @@
 
 .ProfilePage {
   background-image: url(../../assets/icons/background-mood.png);
-  background-color: black;
+
   width: 100vw;
   height: 100vh;
   text-align: center;
@@ -25,7 +26,7 @@
 .profil-section {
   background-size: cover;
   overflow: hidden;
-  font-family: "Sigmar", sans-serif;
+  font-family: "Bakbak", sans-serif;
   font-size: 300px;
   letter-spacing: 20px;
   color: transparent;
