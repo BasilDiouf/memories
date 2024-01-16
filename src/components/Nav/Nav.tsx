@@ -50,6 +50,11 @@ const Nav = () => {
               My Memory
             </a>
           </li>
+          <li className="Navbar__item slideInDown-6">
+            <a href="/gallery" className="Navbar__link">
+              Gallery
+            </a>
+          </li>
           <li className="Navbar__item slideInDown-5">
             <a href="/" className="Navbar__link last" onClick={handleClick}>
               Connexion
